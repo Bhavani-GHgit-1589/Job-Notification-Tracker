@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KodNest Premium - Job Notification Tracker</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Using Google Fonts for Serif (Merriweather) and Sans-Serif (Inter) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Merriweather:wght@300;400;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <nav class="top-nav">
+        <div class="nav-container">
+            <div class="logo">KodNest Premium</div>
+
+            <button class="menu-toggle" aria-label="Toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+
+            <ul class="nav-links">
+                <li><a href="#/dashboard" data-route="/dashboard">Dashboard</a></li>
+                <li><a href="#/saved" data-route="/saved">Saved</a></li>
+                <li><a href="#/digest" data-route="/digest">Digest</a></li>
+                <li><a href="#/settings" data-route="/settings">Settings</a></li>
+                <li><a href="#/proof" data-route="/proof">Proof</a></li>
+                <li><a href="#/jt/07-test" data-route="/jt/07-test" style="color: var(--accent-color);">Test</a></li>
+                <li><a href="#/jt/08-ship" data-route="/jt/08-ship">Ship</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main id="app" class="content-container">
+        <!-- Content injected by router -->
+    </main>
+
+    <!-- Modal Container -->
+    <div id="job-modal" class="modal-overlay">
+        <div class="modal-content">
+            <button class="modal-close">&times;</button>
+            <div id="modal-body">
+                <!-- Modal content injected here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="jobs.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
